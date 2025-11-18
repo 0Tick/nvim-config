@@ -21,6 +21,11 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
+  {
+    'github/copilot.vim',
+    lazy = false,   -- load at startup so autoload functions and autocmds exist
+    -- optional: you can add config = function() ... end here
+  },
 
   { import = "plugins" },
 }, lazy_config)
